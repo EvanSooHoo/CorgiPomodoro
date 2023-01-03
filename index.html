@@ -1,77 +1,73 @@
-<html>
-<head>
-  <title>Corgi Pomodoro</title>
-  
-  <link rel="stylesheet" type="text/css" href="layout.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="page">
-    <header>
-      <center><h1>Corgi Pomodoro</h1></center>
-    </header>
-    <center><h3 class="title is-6">Work Session</h3></center>
-    <section id="app" class="hero is-info is-fullheight is-bold">
-    <div class="hero-body">
-        <div class="container has-text-centered">
+   <html>
+      <head>
+         <title>Corgi Pomodoro</title>
+         <link rel="stylesheet" type="text/css" href="layout.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+      <body>
+         <div class="page">
+         <header>
 
+               <h1 style="text-align:center">Corgi Pomodoro</h1>
 
+         </header>
+
+            <h3 style="text-align:center" class="title is-6">Work Session</h3>
+      
+         <section id="app" style="text-align:center" class="hero is-info is-fullheight is-bold">
             <!--  THE TIMER NUMBERS  -->
-            <center><div id="timer">
-                <span id="minutes"></span>
-                <span id="middle">:</span>
-                <span id="seconds"></span>
-            </div></center>
+
+               <div id="timer">
+                  <span id="minutes"></span>
+                  <span id="middle">:</span>
+                  <span id="seconds"></span>
+               </div>
 
             <!--  THE BUTTONS  -->
-            <div id="buttons">
-
-                <!--  START BUTTON    -->
-                <center><button
-                        id="start"
-                        class="button is-dark is-large">
-                    <i class="fa fa-play-circle" style="font-size:48px;color:red"></i>
-                </button></center>
-
-                <!--   PAUSE BUTTON   -->
-                <center><button
-                        id="stop"
-                        class="button is-dark is-large">
-                    <i id="icon-pause" class="fa fa-pause"></i> 
-                    <!--<i id="icon-pause" class="far fa-pause-circle"></i> -->
-                    <!--<i class="fa fa-pause"></i>-->
-                </button>
-
-                <!--  RESET BUTTON   -->
-                
-                <button
-                        id="reset"
-                        class="button is-dark is-large">
-                    <!--<i class="fas fa-undo"></i>-->
-                    <i class="fa fa-refresh" aria-hidden="true"></i>
-                </button></center>
+            <!--  START BUTTON    -->
+            <button
+               id="start"
+               class="button is-dark is-large">
+               <i class="fa fa-play-circle" style="font-size:48px;color:red"></i>
+               </button>
+            
+            <!--   PAUSE BUTTON   -->
+         
+               <button
+                  id="stop"
+                  class="button is-dark is-large">
+                  <i id="icon-pause" class="fa fa-pause"></i> 
+                  <!--<i id="icon-pause" class="far fa-pause-circle"></i> -->
+                  <!--<i class="fa fa-pause"></i>-->
+               </button>
+               <!--  RESET BUTTON   -->
+               <button
+                  id="reset"
+                  class="button is-dark is-large">
+                  <!--<i class="fas fa-undo"></i>-->
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+               </button>
+            
+         </section>
+         <!--<img src="MediumCorgi.jpg" alt="Corgi">-->
+         <div class="container">
+                              <div class="row text-center">
+               <div class="col-md-10 offset-md-1" text-align:center>
+                  <p id="dogInfo"></p>
+                  
+                     <h2 style="text-align:center">Random corgi</h2>
+                  
+                  <div class="alert alert-danger" role="alert"></div>
+                  
+                     <div id="randomImageContainer"></div>
+                  
+                     <p style="text-align:center" class="dogInfo h5">Random image of a...</p>
+                  
+                     <p style="text-align:center">(Courtesy of the Doge API)</p>
+                  
+               </div>
             </div>
-
-        </div>
-    </div>
-</section>
-    <!--<img src="MediumCorgi.jpg" alt="Corgi">-->
-
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-10 offset-md-1">
-          
-          <p id="dogInfo"></p>
-          <center><h2>Random corgi</h2></center>
-          <div class="alert alert-danger" role="alert"></div>
-          <center><div id="randomImageContainer"></div></center>
-          <center><p class="dogInfo h5">Random image of a...</p></center>
-          <center><p>(Courtesy of the Doge API)</p></center>
-          
-        </div>    
-      </div>
-    </div>
-
-  <script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+         </div>
+         <script type="text/javascript" src="script.js"></script>
+      </body>
+   </html>

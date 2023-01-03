@@ -1,6 +1,16 @@
 //Heavily taken from open source codepen submission by Kostas https://codepen.io/kkoutoup/pen/wjZXPw
 //and janissil https://codepen.io/janisii/pen/EeKpjZ
 //public codepen pages are MIT licensed https://opensource.org/licenses/MIT
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+
+import {MDCTopAppBar} from '@material/top-app-bar';
+
+// Instantiation
+const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+const topAppBar = new MDCTopAppBar(topAppBarElement);
 
     window.timerStatus = -1; // timerStatus (-1 -> off; 1 -> on; 0 -> pause)
     window.timerTick = setInterval(calculateTimer, 1000);
